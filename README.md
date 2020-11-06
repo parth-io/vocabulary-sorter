@@ -6,5 +6,5 @@ Add 'EOF' to a single text document containing all your words and phrases, and r
 
 
 ### To do:
-Use Google Ngrams Words to arange words by difficulty and complexity
+Use Google Ngrams Words to arange words by difficulty and complexity\
 Remove differing word forms (past tense, adjectival form of nouns, etc.) upon user permission
