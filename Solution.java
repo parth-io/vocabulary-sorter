@@ -49,6 +49,8 @@ public class Solution {
         
         Pattern p_Corner_Case = Pattern.compile("\\w$");
         
+        Pattern check_Capitalised = Pattern.compile("[a-z]");
+        
         while(!(s.equals("EOF"))) {
             s = remove_Trailing(s);
             Matcher m = p.matcher(s);
@@ -58,6 +60,10 @@ public class Solution {
             else {
                 Matcher m_Corner_Case = p_Corner_Case.matcher(s);
                 if (m_Corner_Case.find()) {
+                    Matcher checking_Capitalised = check_Capitalised.matcher(s);
+                    if (checking_Capitalised.find()) {
+                        s = s.substring(0,1).toUpperCase() + s.substring(1).toLowerCase();
+                    }
                     words.add(s);
                 }
                 else {
