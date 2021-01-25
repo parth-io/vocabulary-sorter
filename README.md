@@ -1,8 +1,8 @@
-# vocabulary-sorter
+## words-and-phrases-sorter
 
-**To remove duplicate words and transfer the phrases over to a separate file**
+**An experiment in regex to remove duplicate words and transfer the phrases over to a separate file**
 
-Add 'EOF' to a single text document containing all your words and phrases, and run the command `java Solution < name_of_document.txt`
+Add 'EOF' to the end of a single text document containing all your words and phrases, and run the command `java Solution < name_of_document.txt`
 
 
 ### To do:
