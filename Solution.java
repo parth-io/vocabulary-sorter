@@ -38,17 +38,12 @@ public class Solution {
 
     public static void main(String[] args) throws IOException {
         BufferedReader scan = new BufferedReader(new InputStreamReader(System.in), 131072);
-        
         Set<String> phrases = new HashSet<String>();
-        
         TreeSet<String> words = new TreeSet<String>();
-        
         String s = scan.readLine();
         
         Pattern p = Pattern.compile(". .", Pattern.MULTILINE);
-        
         Pattern p_Corner_Case = Pattern.compile("\\w$");
-        
         Pattern check_Capitalised = Pattern.compile("[a-z]");
         
         while(!(s.equals("EOF"))) {
@@ -74,9 +69,7 @@ public class Solution {
         }
         
         scan.close();
-        
         printer(words, "words");
-        
         printer(phrases, "phrases");
     }
 }
